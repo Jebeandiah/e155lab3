@@ -23,6 +23,7 @@ output logic all_unpressed, output logic[3:0] digit_out);
 		digit_out<=digit_out;
 		held_cols<=held_cols;
 		is_waiting<=is_waiting;
+		sync_col_ind<=sync_col_ind;
 		if(nreset==0)
 			begin
 			digit_out<=4'hf;

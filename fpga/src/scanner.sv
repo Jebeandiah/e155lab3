@@ -5,8 +5,8 @@
 //at 2hz
 
 module scanner #(
-parameter MAX_COUNT = 4_000_000,
-parameter COUNTER_WIDTH = 23
+parameter MAX_COUNT = 100_000,
+parameter COUNTER_WIDTH = 17
 ) (input logic clk, reset, enable,
 output logic [3:0] one_hot_col);
 logic [COUNTER_WIDTH-1:0] counter;
