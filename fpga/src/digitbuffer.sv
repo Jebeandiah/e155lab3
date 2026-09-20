@@ -20,7 +20,7 @@ module digitbuffer(input logic clk, nreset, all_unpressed, input logic [3:0] dig
 		else
 			begin
 			were_all_unpressed <= all_unpressed;
-			if((!all_unpressed && were_all_unpressed)||(digit_in!=digit_1))
+			if(((!all_unpressed) && were_all_unpressed)||(digit_in!=digit_1))
 				begin
 				digit_2<=digit_1;
 				digit_1<=digit_in;

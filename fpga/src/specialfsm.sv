@@ -9,6 +9,7 @@ output logic all_unpressed, output logic[3:0] digit_out);
 	logic[COUNTER_WIDTH-1:0]debounce_count;
 	
 	logic is_waiting;
+	logic[1:0] sync_col_ind;
 	logic[1:0] col_ind;
 	logic[1:0] row_ind;
 	logic[3:0] held_cols;
@@ -16,7 +17,7 @@ output logic all_unpressed, output logic[3:0] digit_out);
 	one_hot_reducer col_red(col, col_ind);
 	one_hot_reducer row_red(row, row_ind);
 	// Simple clock divider
-	assign all_unpressed = ~(held_cols[0]|held_cols[1]|held_cols[2]|held_cols[3]);
+	assign all_unpressed = (held_cols==4'b0000);
 	always_ff @(posedge clk)
 		begin
 		digit_out<=digit_out;
@@ -35,17 +36,21 @@ output logic all_unpressed, output logic[3:0] digit_out);
 			end
 		else
 			begin
-			if(row == 4'b0)
-				held_cols <= held_cols & (~col);
-			else
+			if(sync_col_ind != col_ind)
 				begin
-				held_cols<=held_cols|col;
-				if(((held_cols & (~col)) == 4'b0) &&((row==4'b1000)|(row==4'b0100)|(row==4'b0010)|(row==4'b0001)))
+				sync_col_ind<=col_ind;
+				if(row == 4'b0)
+					held_cols <= held_cols & (~col);
+				else
 					begin
-					digit_out<={col_ind,row_ind};
-					if(held_cols==0)
-						is_waiting<=1'b1;
-					end	
+					held_cols<=held_cols|col;
+					if(((held_cols & (~col)) == 4'b0) &&((row==4'b1000)|(row==4'b0100)|(row==4'b0010)|(row==4'b0001)))
+						begin
+						digit_out<={col_ind,row_ind};
+						if(held_cols==0)
+							is_waiting<=1'b1;
+						end	
+					end
 				end
 			end
 		end
