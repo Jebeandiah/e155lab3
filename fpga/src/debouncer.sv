@@ -4,12 +4,12 @@
 //their values onto two seven segment displays. Also flashes 4 leds 
 //by sending a scanning signal to a 4x4 keypad and listening for responses.
 
-module lab3_bl #(
+module debouncer #(
 parameter MAX_COUNT = 400_000,
 parameter COUNTER_WIDTH = 19
 ) (
-	input 	logic nreset, input logic [3:0] scan_row_in,
-	output 	logic [6:0] seg, [1:0] active_display,[3:0] scan_col_out
+	input 	logic nreset, 
+	output 	logic is_waiting,
 );
 	logic [COUNTER_WIDTH-1:0] multiplexing_count;
 	logic int_osc;
