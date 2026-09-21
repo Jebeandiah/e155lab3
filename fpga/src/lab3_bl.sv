@@ -23,8 +23,8 @@ parameter COUNTER_WIDTH = 19
 
 	//logic[3:0] one_hot_col;
 	HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
-	counter #(MAX_COUNT, COUNTER_WIDTH) multiplexing_counter(int_osc, 1'b1,1'b1, multiplexing_count);
-	scanner keypad_scanner(int_osc, 1'b1,1'b1,scan_col_out); 
+	counter #(MAX_COUNT, COUNTER_WIDTH) multiplexing_counter(int_osc, nreset,1'b1, multiplexing_count);
+	scanner keypad_scanner(int_osc, nreset,1'b1,scan_col_out); 
 	synchronizer row_syncer(int_osc, scan_row_in, synced_row_in);
 	//synchronizer col_syncer(int_osc, scan_col_out, synced_col_out);
 

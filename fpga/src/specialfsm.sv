@@ -29,6 +29,7 @@ output logic all_unpressed, output logic[3:0] digit_out);
 			digit_out<=4'hf;
 			held_cols<=4'b0000;
 			is_waiting<=1'b0;
+			sync_col_ind<=2'd0;
 			end
 		else if(is_waiting)
 			begin
