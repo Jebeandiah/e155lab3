@@ -36,7 +36,7 @@ parameter COUNTER_WIDTH = 19
 	//assign scan_led = scan_row_in;
 	assign active_display = (multiplexing_count > MAX_COUNT/2) ? 2'b10 : 2'b01;
 	assign	s = active_display[0] ? digit_1 : digit_2;	
-	sevenseg sevseg(s, seg);
+	scrambledsevenseg sevseg(s, seg);
 
 endmodule
 
