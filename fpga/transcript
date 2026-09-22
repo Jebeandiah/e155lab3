@@ -15,43 +15,7 @@
 # //
 vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 20:03:09 on Sep 21,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module counter
-# -- Compiling module digitbuffer
-# -- Compiling module lab2_bl
-# -- Compiling module lab3_bl
-# -- Compiling module poller
-# -- Compiling module one_hot_reducer
-# -- Compiling module scanner
-# -- Compiling module scrambledsevenseg
-# -- Compiling module specialfsm
-# ** Error (suppressible): C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv(14): (vlog-2388) 'state' already declared in this scope (specialfsm) at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv(13).
-# -- Compiling module synchronizer
-# End time: 20:03:09 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 20:03:12 on Sep 21,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module counter
-# -- Compiling module digitbuffer
-# -- Compiling module lab2_bl
-# -- Compiling module lab3_bl
-# -- Compiling module poller
-# -- Compiling module one_hot_reducer
-# -- Compiling module scanner
-# -- Compiling module scrambledsevenseg
-# -- Compiling module specialfsm
-# ** Error (suppressible): C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv(14): (vlog-2388) 'state' already declared in this scope (specialfsm) at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv(13).
-# -- Compiling module synchronizer
-# End time: 20:03:12 on Sep 21,2026, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 20:04:46 on Sep 21,2026
+# Start time: 21:14:46 on Sep 21,2026
 # vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module counter
@@ -68,5 +32,1549 @@ vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155l
 # Top level modules:
 # 	lab2_bl
 # 	lab3_bl
-# End time: 20:04:46 on Sep 21,2026, Elapsed time: 0:00:00
+# End time: 21:14:46 on Sep 21,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 21:15:01 on Sep 21,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 21:15:01 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.testbenchtop -voptargs=+acc -L iCE40UP
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui work.testbenchtop -voptargs="+acc" -L iCE40UP 
+# Start time: 21:15:26 on Sep 21,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "specialfsm(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.specialfsm(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft4aw1vf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4aw1vf
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+run -all
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 2  Process: /testbenchtop/dut/speshul/#implicit#unique__26 File: C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv Line: 26
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 10416 ps  Iteration: 2  Process: /testbenchtop/dut/speshul/#implicit#unique__26 File: C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv Line: 26
+# ** Error: FAILED! SEVEN seg mux at time: 100062984000.
+#    Time: 100062984 ns  Scope: testbenchtop File: C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv Line: 49
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(52)
+#    Time: 100063084 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 52
+# Causality operation skipped due to absence of debug database file
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.specialfsm(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+run -all
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 2  Process: /testbenchtop/dut/speshul/#implicit#unique__26 File: C:/Users/blertwachara/Documents/GitHub/vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:12:42 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module counter
+# -- Compiling module digitbuffer
+# -- Compiling module lab2_bl
+# -- Compiling module lab3_bl
+# -- Compiling module poller
+# -- Compiling module one_hot_reducer
+# -- Compiling module scanner
+# -- Compiling module scrambledsevenseg
+# -- Compiling module debouncingpoller
+# -- Compiling module synchronizer
+# 
+# Top level modules:
+# 	lab2_bl
+# 	lab3_bl
+# End time: 00:12:42 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:12:51 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:12:52 on Sep 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -gui work.testbenchtop
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui work.testbenchtop 
+# Start time: 00:13:05 on Sep 22,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Error: C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv(27): Module 'HSOSC' is not defined.
+#  For instance 'hf_osc' at path 'testbenchtop.dut'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 00:13:05 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+nings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 21:33:49 on Sep 21,2026, Elapsed time: 0:18:23
+# Errors: 1, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 21:33:49 on Sep 21,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "specialfsm(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.specialfsm(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlftq8dxej".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftq8dxej
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+run -all
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 2  Process: /testbenchtop/dut/speshul/#implicit#unique__26 File: C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv Line: 26
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 10416 ps  Iteration: 2  Process: /testbenchtop/dut/speshul/#implicit#unique__26 File: C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv Line: 26
+# PASSED! seven seg mux at time: 100062984000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(52)
+#    Time: 100063084 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 52
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 22:42:44 on Sep 21,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 22:42:44 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 22:53:06 on Sep 21,2026, Elapsed time: 1:19:17
+# Errors: 0, Warnings: 5
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 22:53:06 on Sep 21,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.specialfsm(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 22:53:18 on Sep 21,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 22:53:18 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 22:59:08 on Sep 21,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 22:59:08 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 22:59:20 on Sep 21,2026, Elapsed time: 0:06:14
+# Errors: 0, Warnings: 1
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 22:59:20 on Sep 21,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.specialfsm(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft0idjbb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0idjbb
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+run -all
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 2  Process: /testbenchtop/dut/speshul/#implicit#unique__26 File: C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv Line: 26
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 10416 ps  Iteration: 2  Process: /testbenchtop/dut/speshul/#implicit#unique__26 File: C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv Line: 26
+# PASSED!Bounce did not register additional press at time: 100062984000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(52)
+#    Time: 100063084 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 52
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 23:56:54 on Sep 21,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module counter
+# -- Compiling module digitbuffer
+# -- Compiling module lab2_bl
+# -- Compiling module lab3_bl
+# -- Compiling module poller
+# -- Compiling module one_hot_reducer
+# -- Compiling module scanner
+# -- Compiling module scrambledsevenseg
+# -- Compiling module specialfsm
+# -- Compiling module synchronizer
+# 
+# Top level modules:
+# 	lab2_bl
+# 	lab3_bl
+# End time: 23:56:54 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 23:57:06 on Sep 21,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 23:57:06 on Sep 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 23:57:21 on Sep 21,2026, Elapsed time: 0:58:01
+# Errors: 0, Warnings: 5
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 23:57:22 on Sep 21,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "specialfsm(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.specialfsm(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlfttv46hm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttv46hm
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint sim:/testbenchtop/dut/speshul/state_t/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbenchtop/dut/speshul/state_t/*'.
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/speshul/state
+run -all
+# PASSED!Bounce did not register additional press at time: 100062984000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(52)
+#    Time: 100063084 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 52
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:14:48 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module counter
+# -- Compiling module debouncingpoller
+# -- Compiling module digitbuffer
+# -- Compiling module lab2_bl
+# -- Compiling module lab3_bl
+# -- Compiling module poller
+# -- Compiling module one_hot_reducer
+# -- Compiling module scanner
+# -- Compiling module scrambledsevenseg
+# -- Compiling module synchronizer
+# 
+# Top level modules:
+# 	lab2_bl
+# 	lab3_bl
+# End time: 00:14:48 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:15:00 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:15:00 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:15:11 on Sep 22,2026, Elapsed time: 0:17:49
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:15:11 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncingpoller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft87yj76".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft87yj76
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 100062984000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(52)
+#    Time: 100063084 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 52
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:23:28 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:23:28 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:23:45 on Sep 22,2026, Elapsed time: 0:08:34
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:23:45 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncingpoller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft5bt3fr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5bt3fr
+run -all
+# PASSED!Bounce did not register additional press at time: 650039000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(53)
+#    Time: 650139 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 53
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:27:51 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:27:52 on Sep 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:28:04 on Sep 22,2026, Elapsed time: 0:04:19
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:28:04 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlftnf8g02".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnf8g02
+run -all
+# PASSED!Bounce did not register additional press at time: 650039000.
+# PASSED!Bounce did not register additional press at time: 948710000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(72)
+#    Time: 970148 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 72
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:29:09 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:29:09 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:29:23 on Sep 22,2026, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:29:23 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlfttrgfnv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttrgfnv
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+run -all
+# PASSED!Bounce did not register additional press at time: 650039000.
+# PASSED!Bounce did not register additional press at time: 948710000.
+# PASSED!Bounce did not register additional press at time: 1247381000.
+# PASSED!Bounce did not register additional press at time: 1546052000.
+# PASSED!Bounce did not register additional press at time: 1844723000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(123)
+#    Time: 1866161 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 123
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:34:38 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:34:38 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:34:51 on Sep 22,2026, Elapsed time: 0:05:28
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:34:51 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlftdhi7xt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdhi7xt
+add wave -position insertpoint sim:/testbenchtop/dut/hf_osc/*
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint sim:/testbenchtop/dut/digits/*
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 650039000.
+# PASSED!Bounce did not register additional press at time: 948709000.
+# PASSED!Bounce did not register additional press at time: 1247379000.
+# PASSED!Bounce did not register additional press at time: 1546049000.
+# PASSED!Bounce did not register additional press at time: 1844719000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(123)
+#    Time: 1866156 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 123
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:38:59 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:38:59 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:39:15 on Sep 22,2026, Elapsed time: 0:04:24
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:39:15 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlftwchkcd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwchkcd
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 660439000.
+# PASSED!Bounce did not register additional press at time: 959109000.
+# PASSED!Bounce did not register additional press at time: 1257779000.
+# PASSED!Bounce did not register additional press at time: 1556449000.
+# PASSED!Bounce did not register additional press at time: 1855119000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(124)
+#    Time: 1876556 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 124
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:41:46 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:41:46 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:42:00 on Sep 22,2026, Elapsed time: 0:02:45
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:42:00 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft61firh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft61firh
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 671246000.
+# PASSED!Bounce did not register additional press at time: 969916000.
+# PASSED!Bounce did not register additional press at time: 1268586000.
+# PASSED!Bounce did not register additional press at time: 1567256000.
+# PASSED!Bounce did not register additional press at time: 1865926000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(123)
+#    Time: 1887363 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 123
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:45:07 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:45:07 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:45:18 on Sep 22,2026, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:45:18 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlftngi5ys".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftngi5ys
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+run -all
+# PASSED!Bounce did not register additional press at time: 660110000.
+# PASSED!Bounce did not register additional press at time: 958780000.
+# PASSED!Bounce did not register additional press at time: 1257450000.
+# PASSED!Bounce did not register additional press at time: 1556120000.
+# PASSED!Bounce did not register additional press at time: 1854790000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(123)
+#    Time: 1876227 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 123
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+run -all
+# PASSED!Bounce did not register additional press at time: 660110000.
+# PASSED!Bounce did not register additional press at time: 958780000.
+# PASSED!Bounce did not register additional press at time: 1257450000.
+# PASSED!Bounce did not register additional press at time: 1556120000.
+# PASSED!Bounce did not register additional press at time: 1854790000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(123)
+#    Time: 1876227 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 123
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:48:34 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:48:34 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:48:45 on Sep 22,2026, Elapsed time: 0:03:27
+# Errors: 0, Warnings: 1
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:48:46 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlftam8wb4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftam8wb4
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 659040000.
+# PASSED!Bounce did not register additional press at time: 957710000.
+# PASSED!Bounce did not register additional press at time: 1256380000.
+# PASSED!Bounce did not register additional press at time: 1555050000.
+# PASSED!Bounce did not register additional press at time: 1853720000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(123)
+#    Time: 1875157 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 123
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:51:17 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:51:17 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:51:22 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:51:22 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:51:27 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:51:27 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:51:44 on Sep 22,2026, Elapsed time: 0:02:58
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:51:44 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlfttxqkv9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttxqkv9
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 659040000.
+# PASSED!Bounce did not register additional press at time: 957706000.
+# PASSED!Bounce did not register additional press at time: 1256376000.
+# PASSED!Bounce did not register additional press at time: 1555042000.
+# PASSED!Bounce did not register additional press at time: 1853712000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(123)
+#    Time: 1875145 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 123
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:53:11 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:53:11 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:53:22 on Sep 22,2026, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:53:22 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlfti5b5f6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfti5b5f6
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+run -all
+# PASSED!Bounce did not register additional press at time: 659037000.
+# PASSED!Bounce did not register additional press at time: 957703000.
+# PASSED!Bounce did not register additional press at time: 1256373000.
+# PASSED!Bounce did not register additional press at time: 1555039000.
+# PASSED!Bounce did not register additional press at time: 1853709000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(123)
+#    Time: 1875142 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 123
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 00:57:02 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 00:57:02 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 00:57:13 on Sep 22,2026, Elapsed time: 0:03:51
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 00:57:13 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft2ssxya".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2ssxya
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 650040000.
+# PASSED!Bounce did not register additional press at time: 948706000.
+# PASSED!Bounce did not register additional press at time: 1247372000.
+# PASSED!Bounce did not register additional press at time: 1546038000.
+# PASSED!Bounce did not register additional press at time: 1844704000.
+# PASSED!Bounce did not register additional press at time: 2143370000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(139)
+#    Time: 2143470 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 139
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 01:01:17 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 01:01:17 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 01:01:23 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 01:01:23 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 01:01:35 on Sep 22,2026, Elapsed time: 0:04:22
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 01:01:35 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlftfnkg5v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfnkg5v
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+run -all
+# PASSED!Bounce did not register additional press at time: 642540000.
+# PASSED!Bounce did not register additional press at time: 941206000.
+# PASSED!Bounce did not register additional press at time: 1239872000.
+# PASSED!Bounce did not register additional press at time: 1538538000.
+# PASSED!Bounce did not register additional press at time: 1837204000.
+# PASSED!Bounce did not register additional press at time: 2135870000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(139)
+#    Time: 2135970 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 139
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 01:04:26 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 01:04:26 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 01:04:39 on Sep 22,2026, Elapsed time: 0:03:04
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 01:04:39 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlftwvjj2j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwvjj2j
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 641274000.
+# PASSED!Bounce did not register additional press at time: 939940000.
+# PASSED!Bounce did not register additional press at time: 1238606000.
+# PASSED!Bounce did not register additional press at time: 1537272000.
+# PASSED!Bounce did not register additional press at time: 1835938000.
+# PASSED!Bounce did not register additional press at time: 2134604000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(139)
+#    Time: 2134704 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 139
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 01:06:47 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 01:06:47 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 01:07:05 on Sep 22,2026, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 01:07:05 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft5nxct6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5nxct6
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 641274000.
+# PASSED!Bounce did not register additional press at time: 939943000.
+# PASSED!Bounce did not register additional press at time: 1238612000.
+# PASSED!Bounce did not register additional press at time: 1537281000.
+# PASSED!Bounce did not register additional press at time: 1835950000.
+# PASSED!Bounce did not register additional press at time: 2134619000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(139)
+#    Time: 2134719 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 139
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 01:09:13 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 01:09:13 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 01:09:26 on Sep 22,2026, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 01:09:26 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft4fs7q0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4fs7q0
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 641274000.
+# PASSED!Bounce did not register additional press at time: 939945000.
+# PASSED!Bounce did not register additional press at time: 1238616000.
+# PASSED!Bounce did not register additional press at time: 1537287000.
+# PASSED!Bounce did not register additional press at time: 1835958000.
+# PASSED!Bounce did not register additional press at time: 2134629000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(139)
+#    Time: 2134729 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 139
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 01:11:33 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 01:11:33 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 01:11:45 on Sep 22,2026, Elapsed time: 0:02:19
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 01:11:46 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlftew5zvz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftew5zvz
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 641274000.
+# PASSED!Bounce did not register additional press at time: 939945000.
+# PASSED!Bounce did not register additional press at time: 1238616000.
+# PASSED!Bounce did not register additional press at time: 1537287000.
+# PASSED!Bounce did not register additional press at time: 1835958000.
+# PASSED!Bounce did not register additional press at time: 2134629000.
+# PASSED!Bounce did not register additional press at time: 2433300000.
+# PASSED!Bounce did not register additional press at time: 2731971000.
+# PASSED!Bounce did not register additional press at time: 3030642000.
+# PASSED!Bounce did not register additional press at time: 3329313000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(209)
+#    Time: 3329413 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 209
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 01:14:43 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 01:14:43 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 01:14:56 on Sep 22,2026, Elapsed time: 0:03:10
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 01:14:56 on Sep 22,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncingpoller(fast)
+# Loading work.counter(fast__2)
+# Loading work.poller(fast)
+# Loading work.one_hot_reducer(fast)
+# Loading work.scrambledsevenseg(fast)
+add wave -position insertpoint  \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset \
+sim:/testbenchtop/active_display
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft1dwxz2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1dwxz2
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_2 \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/d_poller/state
+run -all
+# PASSED!Bounce did not register additional press at time: 641039000.
+# PASSED!Bounce did not register additional press at time: 939710000.
+# PASSED!Bounce did not register additional press at time: 1238381000.
+# PASSED!Bounce did not register additional press at time: 1537052000.
+# PASSED!Bounce did not register additional press at time: 1835723000.
+# PASSED!Bounce did not register additional press at time: 2134394000.
+# PASSED!Bounce did not register additional press at time: 2433065000.
+# PASSED!Bounce did not register additional press at time: 2731736000.
+# PASSED!Bounce did not register additional press at time: 3030407000.
+# PASSED!Bounce did not register additional press at time: 3329078000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(209)
+#    Time: 3329178 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 209
