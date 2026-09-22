@@ -10,8 +10,9 @@ output logic shift_enable, output logic[3:0] digit_out);
 		 typedef enum logic [1:0] {
         POLLING, SHIFT_ENABLE, DEBOUNCING
     } state_t;
-
     state_t state, next_state;
+
+	counter #(DEBOUNCE_COUNTS, COUNTER_WIDTH)  debounce_counter(clk, state!=POLLING,1'b1, debounce_count);
 	logic is_new_digit;
 	logic is_waiting;
 	assign is_waiting = debounce_count!=0;
