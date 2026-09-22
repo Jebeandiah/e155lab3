@@ -5,19 +5,18 @@
 `timescale 1 ns/1 ns
 
 
-module poller_tb();
+module debounced_poller_tb();
 	logic clk;
 	logic nreset;
-	logic enable;
 	logic[3:0] col;
 
 	logic[3:0] row;
 	logic is_new_digit;
 	logic[3:0] digit_out;
 	logic[3:0] saved_digit_out;
-  poller
+  debounced_poller
  dut (
-.clk(clk), .nreset(nreset), .enable(enable), .col(col), .row(row), .is_new_digit(is_new_digit), .digit_out(digit_out)
+.clk(clk), .nreset(nreset), .col(col), .row(row), .is_new_digit(is_new_digit), .digit_out(digit_out)
     );
 
    always begin

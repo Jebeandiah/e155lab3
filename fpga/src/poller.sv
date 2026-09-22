@@ -8,9 +8,10 @@ module poller (input logic clk,nreset,enable, input logic [3:0] col,input logic 
 output logic is_new_digit,output logic[3:0] digit_out);
 	
 	logic[1:0] sync_col_ind;
+
+	logic[3:0] held_cols;
 	logic[1:0] col_ind;
 	logic[1:0] row_ind;
-	logic[3:0] held_cols;
 	one_hot_reducer col_red(col, col_ind);
 	one_hot_reducer row_red(row, row_ind);
 	// Simple clock divider
