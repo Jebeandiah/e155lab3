@@ -9,6 +9,9 @@
         <Source name="src/scanner.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
+        <Source name="src/poller.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
         <Source name="src/specialfsm.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
@@ -18,11 +21,14 @@
         <Source name="src/synchronizer.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="src/lab3_bl.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog" top_module="lab3_bl"/>
-        </Source>
         <Source name="src/scrambledsevenseg.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="src/debouncer.sv" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="src/lab3_bl.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="lab3_bl"/>
         </Source>
         <Source name="pins.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>

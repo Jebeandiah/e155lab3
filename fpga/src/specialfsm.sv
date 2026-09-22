@@ -10,7 +10,7 @@ output logic shift_enable, output logic[3:0] digit_out);
 		 typedef enum logic [1:0] {
         POLLING, SHIFT_ENABLE, DEBOUNCING
     } state_t;
-```
+
     state_t state, next_state;
 	logic is_new_digit;
 	logic is_waiting;
@@ -23,20 +23,17 @@ output logic shift_enable, output logic[3:0] digit_out);
             DEBOUNCING: next_state = is_waiting ? DEBOUNCING : POLLING;
         endcase
     end
-	logic debounce_nreset;
-	counter #(DEBOUNCE_COUNTS, COUNTER_WIDTH)  debounce_counter(clk, debounce_nreset,1'b1, debounce_count);
-	one_hot_reducer col_red(col, col_ind);
-	one_hot_reducer row_red(row, row_ind);
 
-	poller polle(clk, nreset, state==POLLING, col, row, is_new_digit, is_new_digit, digit_out)
+
+	poller polle(clk, nreset, state==POLLING, col, row, is_new_digit, digit_out);
 	always_comb begin
         shift_enable = (state == SHIFT_ENABLE);
     end
 
     // State register
-    always_ff @(posedge clk or negedge reset) begin
-        if (!reset)
-            state <= SCANNING;
+    always_ff @(posedge clk) begin
+        if (nreset==0)
+            state <= POLLING;
         else
             state <= next_state;
     end

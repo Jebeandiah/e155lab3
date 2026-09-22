@@ -12,7 +12,6 @@ module digitbuffer(input logic clk, nreset, enable, input logic [3:0] digit_in,
 		begin
 		if(nreset==0)
 			begin
-			were_all_unpressed <= 1'b0;
 			digit_1 <= 4'hf;
 			digit_2 <= 4'hf;
 			end

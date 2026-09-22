@@ -5,7 +5,7 @@
 //at 2hz
 
 module poller (input logic clk,nreset,enable, input logic [3:0] col,input logic [3:0] row,
-output logic is_new_digit,debounce_nreset, logic[3:0] digit_out);
+output logic is_new_digit, logic[3:0] digit_out);
 	
 	logic[1:0] sync_col_ind;
 	logic[1:0] col_ind;
@@ -16,18 +16,6 @@ output logic is_new_digit,debounce_nreset, logic[3:0] digit_out);
 	// Simple clock divider
 
 
-    // Output logic (Moore)
-    always_comb begin
-        out = (state == S3);
-    end
-
-    // State register
-    always_ff @(posedge clk or negedge reset) begin
-        if (!reset)
-            state <= S0;
-        else
-            state <= next_state;
-    end
 	
 	
 	always_ff @(posedge clk)
@@ -36,39 +24,35 @@ output logic is_new_digit,debounce_nreset, logic[3:0] digit_out);
 			begin
 			digit_out<=4'hf;
 			held_cols<=4'b0000;
-			debounce_nreset<=1'b0;
 			sync_col_ind<=2'd0;
-			is_new_digit = 1'b0;
+			is_new_digit <= 1'b0;
 			end
-		else if(!enable)
+		else if(enable)
 			begin
-			//is_new_digit = 1'b0;
-			
-			end
-		else if(sync_col_ind != col_ind)
-			begin
-				debounce_nreset<=1'b0;
-
-			sync_col_ind<=col_ind;
-			if(row == 4'b0)
-				held_cols <= held_cols & (~col);
-				is_new_digit = 1'b0;
-			else
+			if(sync_col_ind != col_ind)
 				begin
-				
-				held_cols<=held_cols|col;
-				if(((held_cols & (~col)) == 4'b0) &&((row==4'b1000)|(row==4'b0100)|(row==4'b0010)|(row==4'b0001)))
+
+				sync_col_ind<=col_ind;
+				if(row == 4'b0)
 					begin
-					if((held_cols==4'b0000)||({col_ind,row_ind}!=digit_out))
-						is_new_digit = 1'b1;
-					else
-						is_new_digit = 1'b0;
-					digit_out<={col_ind,row_ind};
-					if(held_cols==0)
-						debounce_nreset<=1'b1;
-					end	
+					held_cols <= held_cols & (~col);
+					is_new_digit <= 1'b0;
+					end
 				else
-					is_new_digit = 1'b0;
+					begin
+					
+					held_cols<=held_cols|col;
+					if(((held_cols & (~col)) == 4'b0) &&((row==4'b1000)|(row==4'b0100)|(row==4'b0010)|(row==4'b0001)))
+						begin
+						if((held_cols==4'b0000)||({col_ind,row_ind}!=digit_out))
+							is_new_digit <= 1'b1;
+						else
+							is_new_digit <= 1'b0;
+						digit_out<={col<=col_ind,row_ind};
+						end	
+					else
+						is_new_digit <= 1'b0;
+					end
 				
 				end
 			end

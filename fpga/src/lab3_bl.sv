@@ -17,8 +17,8 @@ parameter COUNTER_WIDTH = 19
 
 	logic[3:0] digit_1;
 	logic[3:0] digit_2;
-	logic all_unpressed;
-	logic[3:0] processed_input;
+	logic shift_enable;
+	logic[3:0] processed_digit;
 	logic[3:0] s;
 
 	//logic[3:0] one_hot_col;
@@ -29,17 +29,17 @@ parameter COUNTER_WIDTH = 19
 	//synchronizer col_syncer(int_osc, scan_col_out, synced_col_out);
 
 
-	digitbuffer digits(int_osc,nreset, all_unpressed, processed_input, digit_1, digit_2);
+	digitbuffer digits(int_osc,nreset, shift_enable, processed_digit, digit_1, digit_2);
 	//assign scan_led = synced_row_in;
 
-	specialfsm speshul(int_osc, nreset, scan_col_out, ~synced_row_in, all_unpressed, processed_input);
+	specialfsm speshul(int_osc, nreset, scan_col_out, ~synced_row_in, shift_enabled, processed_digit);
 	//assign scan_led = scan_row_in;
 	assign active_display = (multiplexing_count > MAX_COUNT/2) ? 2'b10 : 2'b01;
 	assign	s = active_display[0] ? digit_1 : digit_2;	
 	scrambledsevenseg sevseg(s, seg);
-
-endmodule
-
+ 
+endmodule 
+  
 
 
 
