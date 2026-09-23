@@ -1,8 +1,6 @@
 //Author: Ben Lertwachara - blertwachara@hmc.edu
-//Date: 9/15/2026
-//Functionality: Splits counter modules width in 4
-//and assigns output for each section to scan each column
-//at 2hz
+//Date: 9/23/2026
+//Functionality: tracks last input to tell if theres a change
 
 module digittracker (input logic clk,nreset,enable, all_unpressed,output logic was_unpressed, input logic [3:0] digit_in, output logic [3:0] current_digit);
 	

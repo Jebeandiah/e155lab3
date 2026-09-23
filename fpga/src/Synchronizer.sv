@@ -1,8 +1,6 @@
 //Author: Ben Lertwachara - blertwachara@hmc.edu
 //Date: 9/15/2026
-//Functionality: Splits counter modules width in 4
-//and assigns output for each section to scan each column
-//at 2hz
+//Functionality: Syncs async inputs with one intermed stage
 
 module synchronizer #(parameter WIDTH = 4) (input logic clk, input logic [WIDTH-1:0] async_in,
 output logic[WIDTH-1:0] sync_out); 

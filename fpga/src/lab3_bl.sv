@@ -1,8 +1,6 @@
 //Author: Ben Lertwachara - blertwachara@hmc.edu
-//Date: 9/15/2026
-//Functionality: Takes input dip switches to multiplex
-//their values onto two seven segment displays. Also flashes 4 leds 
-//by sending a scanning signal to a 4x4 keypad and listening for responses.
+//Date: 9/23/2026
+//Functionality: Shifts digits read from keypad onto two seven segment displays
 
 module lab3_bl #(
 parameter MULTIPLEXING_MAX = 400_000,

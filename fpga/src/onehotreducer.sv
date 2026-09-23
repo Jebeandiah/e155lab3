@@ -1,3 +1,7 @@
+//Author: Ben Lertwachara - blertwachara@hmc.edu
+//Date: 9/23/2026
+//Functionality: Determines index of 4 bit one hot
+
 module onehotreducer(input logic [3:0] one_hot_in, output logic [1:0] index_out);
 	always_comb
 		begin

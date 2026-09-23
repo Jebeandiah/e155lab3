@@ -1,6 +1,6 @@
 //Author: Ben Lertwachara - blertwachara@hmc.edu
-//Date: 9/9/2026
-//Functionality: Testbench for heartbeat module
+//Date: 9/93/2026
+//Functionality: Testbench for digittracker module
 
 `timescale 1 ns/1 ns
 

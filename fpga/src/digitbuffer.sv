@@ -1,8 +1,6 @@
 //Author: Ben Lertwachara - blertwachara@hmc.edu
-//Date: 9/15/2026
-//Functionality: Takes input dip switches to multiplex
-//their values onto two seven segment displays. Also flashes 4 leds 
-//by sending a scanning signal to a 4x4 keypad and listening for responses.
+//Date: 9/23/2026
+//Functionality: Shift register for digits
 
 module digitbuffer(input logic clk, nreset, enable, input logic [3:0] digit_in,
 	

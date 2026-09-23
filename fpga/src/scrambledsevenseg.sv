@@ -1,6 +1,6 @@
 //Author: Ben Lertwachara - blertwachara@hmc.edu
 //Date: 9/9/2026
-//Functionality: Takes input from onboard dip switches
+//Functionality: Takes input as 4bit vec
 //and decodes them as binary digits to display 0-f to
 // a 7 segment display
 module scrambledsevenseg(input logic [3:0] s,

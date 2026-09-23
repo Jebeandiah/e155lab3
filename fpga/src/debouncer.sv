@@ -1,8 +1,6 @@
 //Author: Ben Lertwachara - blertwachara@hmc.edu
-//Date: 9/15/2026
-//Functionality: Splits counter modules width in 4
-//and assigns output for each section to scan each column
-//at 2hz
+//Date: 9/23/2026
+//Functionality: debouncer fsm
 
 module debouncer #(parameter DEBOUNCING_MAX = 2_400_000, parameter DEBOUNCING_WIDTH = 24) (input logic clk,nreset, all_unpressed, input logic [3:0] digit_in,
 output logic shift_enable);
