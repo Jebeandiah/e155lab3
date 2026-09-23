@@ -1,7 +1,7 @@
 m255
 K4
 z2
-Z0 !s12c _opt2
+Z0 !s12c _opt1
 Z1 !s99 nomlopt
 R0
 R1
@@ -9,7 +9,59 @@ R0
 R1
 R0
 R1
-Z2 !s12c _opt1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+Z2 !s12c _opt2
 R1
 R2
 R1
@@ -17,43 +69,51 @@ R2
 R1
 R2
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
 R1
-R2
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
 R1
 !s12c _opt
 R1
@@ -70,35 +130,34 @@ T_opt
 !i144 0
 !s110 1790027589
 Vd[JB[dKICjkTC?LWQUPWe2
-Z4 04 12 4 work testbenchtop fast 0
+04 12 4 work testbenchtop fast 0
 =1-8cf8c5f81583-6ab1a744-d9-3a50
 R1
 !s12f OEM25U12 
-Z5 !s12b OEM100
-Z6 !s124 OEM100
-Z7 !s135 nogc
-Z8 o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
-Z9 tCvgOpt 0 defaultOptions 1107585188
+Z4 !s12b OEM100
+Z5 !s124 OEM100
+Z6 !s135 nogc
+Z7 o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
+Z8 tCvgOpt 0 defaultOptions 1107585188
 n@_opt
-Z10 OL;O;2025.2;82
+Z9 OL;O;2025.2;82
 R3
 T_opt1
 !i145 1
 !i144 0
-!s110 1790064897
-Vh@lZ32<ljY>4W>zl@TDQ;3
-R4
-=1-8cf8c5f815b0-6ab23900-2d7-2504
+!s110 1790145931
+VXZJ0RcFz49DoaW_D?`:FX0
+04 16 4 work onehotreducer_tb fast 0
+=1-546ceb15b648-6ab3758b-18-ba4
 R1
-!s12f OEM25U13 
+!s12f OEM25U2 
+R4
 R5
 R6
 R7
 R8
-R9
 n@_opt1
-R10
-R3
+R9
 T_opt2
 !i145 1
 !i144 0
@@ -108,42 +167,93 @@ V3KWcXP@oZ8U?O2N4Siai03
 =1-8cf8c5f815b0-6ab24bd1-1a5-2720
 R1
 !s12f OEM25U4 
+R4
 R5
 R6
 R7
 R8
-R9
 n@_opt2
-R10
+R9
+R3
 vcounter
-Z11 2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
-Z12 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
-Z13 !s110 1790061288
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv
+Z10 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z11 !s110 1790137290
 !i10b 1
 !s100 R35nDI`Dcf^4HPGc:o<hQ3
 IVkD1WUl?N2SKZ2bEl`LJ01
 S1
 R3
-Z14 w1789878618
+Z12 w1790121708
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv
-!i122 23
+!i122 97
 L0 6 18
-Z15 VDg1SIo80bB@j0V0VzS_@n1
-Z16 OL;L;2025.2;82
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2025.2;82
 r1
 !s85 0
 31
-Z17 !s108 1790061288.000000
-Z18 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|
-Z19 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv|
+Z15 !s108 1790137290.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|
 !i113 0
-Z20 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z21 tCvgOpt 0 defaultOptions 1085333592
-vdebouncingpoller
-R11
-R12
+Z16 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z17 tCvgOpt 0 defaultOptions 1085333592
+vdebouncer
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debouncer.sv
+R10
+!s110 1790140643
+!i10b 1
+!s100 9eda>zYe:m^7A<Ze;6Y0P3
+IA[PE]T;ii7cCNKzDX7k;Z0
+S1
+R3
+w1790140630
+8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debouncer.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debouncer.sv
+!i122 112
+L0 7 48
 R13
+R14
+r1
+!s85 0
+31
+!s108 1790140643.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debouncer.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debouncer.sv|
+!i113 0
+R16
+R17
+vdebouncer_tb
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/debouncer_tb.sv
+R10
+!s110 1790141797
+!i10b 1
+!s100 TS0>K<CjkXUYz;b@[ehzD1
+I6[RI2=_J2]0A9Clgk=Y7G1
+S1
+R3
+w1790141768
+8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/debouncer_tb.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/debouncer_tb.sv
+!i122 120
+L0 8 74
+R13
+R14
+r1
+!s85 0
+31
+!s108 1790141797.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/debouncer_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/debouncer_tb.sv|
+!i113 0
+R16
+R17
+vdebouncingpoller
+Z18 2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
+R10
+Z19 !s110 1790061288
 !i10b 1
 !s100 S3gMK3S7SFaBCR2So:[AX1
 I2@J21I2`:lbAYZb1MBBcE2
@@ -153,221 +263,346 @@ w1790061067
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv
 !i122 23
-Z22 L0 7 45
-R15
-R16
+Z20 L0 7 45
+R13
+R14
 r1
 !s85 0
 31
-R17
-R18
-R19
+Z21 !s108 1790061288.000000
+Z22 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|
+Z23 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/debounced_poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv|
 !i113 0
-R20
-R21
+R16
+R17
 vdigitbuffer
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv
+R10
 R11
-R12
-R13
 !i10b 1
 !s100 lF82BhC0XN;GBW3eZ3j@o1
 IBm;iTXCRiglf;R6Y>ggdW3
 S1
 R3
-w1790056918
+R12
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv
-!i122 23
+!i122 99
 L0 7 23
-R15
-R16
+R13
+R14
 r1
 !s85 0
 31
-R17
-R18
-R19
+R15
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|
 !i113 0
-R20
-R21
-vlab2_bl
-R11
-R12
+R16
+R17
+vdigitbuffer_tb
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digitbuffer_tb.sv
+R10
+!s110 1790143843
+!i10b 1
+!s100 VCjKUfmaEJl:chES`cf@o2
+IIB_XmG_Oh;4?dih[^1Fah3
+S1
+R3
+w1790143835
+8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digitbuffer_tb.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digitbuffer_tb.sv
+!i122 123
+L0 8 62
 R13
+R14
+r1
+!s85 0
+31
+!s108 1790143843.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digitbuffer_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digitbuffer_tb.sv|
+!i113 0
+R16
+R17
+vdigittracker
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digittracker.sv
+R10
+R11
+!i10b 1
+!s100 jT23a=;ibPZLLo?hKDXKg1
+I`HiNXm?Y1QUA?Xgek7Mc@1
+S1
+R3
+w1790137261
+8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digittracker.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digittracker.sv
+!i122 100
+L0 7 19
+R13
+R14
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digittracker.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digittracker.sv|
+!i113 0
+R16
+R17
+vdigittracker_tb
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digittracker_tb.sv
+R10
+!s110 1790137404
+!i10b 1
+!s100 6VaHZki7eLL7KnYRIz?Y:0
+IbbZm5L^GXdmG=do9oenH90
+S1
+R3
+w1790137397
+8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digittracker_tb.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digittracker_tb.sv
+!i122 109
+L0 8 68
+R13
+R14
+r1
+!s85 0
+31
+!s108 1790137404.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digittracker_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/digittracker_tb.sv|
+!i113 0
+R16
+R17
+vlab2_bl
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv
+R10
+R11
 !i10b 1
 !s100 hC_=`Wc=VVzlOTGSY1W3o1
 IFC37g?:oJ^7_hS`UZQE7o1
 S1
 R3
-R14
+R12
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv
-!i122 23
+!i122 101
 L0 7 22
-R15
-R16
+R13
+R14
 r1
 !s85 0
 31
-R17
-R18
-R19
+R15
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|
 !i113 0
-R20
-R21
+R16
+R17
 vlab3_bl
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv
+R10
 R11
-R12
-R13
 !i10b 1
-!s100 6Zj3E1mgzmi3>odgZ0VL60
-IN8bT01CI2;;Xlm43UISEl2
+!s100 GQ_0QE^71LFH8>dj`5<`;3
+I6;SXVVYmK2B`lL`P[[?OW2
 S1
 R3
-w1790061050
+w1790130196
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv
-!i122 23
-L0 7 36
-R15
-R16
+!i122 102
+L0 7 37
+R13
+R14
 r1
 !s85 0
 31
-R17
-R18
-R19
+R15
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|
 !i113 0
-R20
-R21
+R16
+R17
 vone_hot_reducer
-R11
-R12
-R13
+R18
+R10
+R19
 !i10b 1
 !s100 `NIgkNiAM2UQ_Bo24o;JD0
 IXi?0h1h0=kkeAH>GHnAN83
 S1
 R3
-Z23 w1790049275
+w1790049275
 Z24 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv
 Z25 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv
 !i122 23
 L0 59 14
-R15
-R16
+R13
+R14
 r1
 !s85 0
 31
-R17
-R18
-R19
-!i113 0
-R20
 R21
-vpoller
-R11
-R12
-R13
+R22
+R23
+!i113 0
+R16
+R17
+vonehotreducer
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/onehotreducer.sv
+R10
+Z26 !s110 1790137291
 !i10b 1
-!s100 ^::iKjd:dBIz^Yo>_2J`L2
-I9aPo>f54g_2eK0F2F?QKZ3
+!s100 P94;D]eJnP61PmDn9>Zh^0
+I8_Phk>ReWePW4kA;fU<a41
 S1
 R3
-R23
+w1790127577
+8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/onehotreducer.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/onehotreducer.sv
+!i122 103
+L0 1 14
+R13
+R14
+r1
+!s85 0
+31
+Z27 !s108 1790137291.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/onehotreducer.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/onehotreducer.sv|
+!i113 0
+R16
+R17
+vonehotreducer_tb
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/onehotreducer__tb.sv
+R10
+!s110 1790145915
+!i10b 1
+!s100 4K_L7U[]oPS[ekXdhkAHm3
+IR]`J=66^`ZYDXXj_C6UdJ0
+S1
+R3
+w1790145908
+8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/onehotreducer__tb.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/onehotreducer__tb.sv
+!i122 128
+L0 8 47
+R13
+R14
+r1
+!s85 0
+31
+!s108 1790145915.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/onehotreducer__tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/onehotreducer__tb.sv|
+!i113 0
+R16
+R17
+vpoller
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv
+R10
+R26
+!i10b 1
+!s100 FGW1XNodaz>HP7L9k;W;E3
+Ii]H`Lc<5N^PP^Kka:CcFM0
+S1
+R3
+w1790128265
 R24
 R25
-!i122 23
-L0 7 51
-R15
-R16
+!i122 104
+L0 7 38
+R13
+R14
 r1
 !s85 0
 31
-R17
-R18
-R19
+R27
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|
 !i113 0
-R20
-R21
+R16
+R17
 vpoller_tb
 2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/poller_tb.sv
-R12
-!s110 1790069699
+R10
+!s110 1790137647
 !i10b 1
-!s100 X5ZNGmYOU7OZUNn4A0BKj2
-I3Q`n?4b[>V:2BPnWCXC930
+!s100 z4dH3GTIbP;RJ^6lfJ5Eb0
+I`NcGi@FEM4oG@MkUd85J>3
 S1
 R3
-w1790069677
+w1790131395
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/poller_tb.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/poller_tb.sv
-!i122 49
-L0 8 92
-R15
-R16
+!i122 110
+L0 8 90
+R13
+R14
 r1
 !s85 0
 31
-!s108 1790069699.000000
+!s108 1790137647.000000
 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/poller_tb.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/poller_tb.sv|
 !i113 0
-R20
-R21
+R16
+R17
 vscanner
-R11
-R12
-R13
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv
+R10
+R26
 !i10b 1
 !s100 kEMTdQ5oAFZn:`0f0ch[U1
 I^AMFL]To<=n6>f_TQ=QoO3
 S1
 R3
-w1790055629
+R12
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv
-!i122 23
+!i122 105
 L0 7 26
-R15
-R16
+R13
+R14
 r1
 !s85 0
 31
-R17
-R18
-R19
+R27
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|
 !i113 0
-R20
-R21
+R16
+R17
 vscrambledsevenseg
-R11
-R12
-R13
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv
+R10
+R26
 !i10b 1
 !s100 on_:Yc]DI9F[>SAIF5mmY0
 IYlO?:ng7>X9T5i_eGzc`^1
 S1
 R3
-w1789951698
+R12
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv
-!i122 23
+!i122 106
 L0 6 25
-R15
-R16
+R13
+R14
 r1
 !s85 0
 31
-R17
-R18
-R19
+R27
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|
 !i113 0
-R20
-R21
+R16
+R17
 vspecialfsm
 2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
-R12
+R10
 !s110 1790060214
 !i10b 1
 !s100 LSiVTiU;@838NLS9SVPo80
@@ -378,9 +613,9 @@ w1790060143
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv
 !i122 19
-R22
-R15
-R16
+R20
+R13
+R14
 r1
 !s85 0
 31
@@ -388,55 +623,80 @@ r1
 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/counter.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/digitbuffer.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab2_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/lab3_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/poller.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scanner.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/scrambledsevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/specialfsm.sv|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv|
 !i113 0
-R20
-R21
+R16
+R17
 vsynchronizer
-R11
-R12
-R13
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/Synchronizer.sv
+R10
+R26
 !i10b 1
 !s100 `No7E`FcS;ObIeGTHPgMa2
-IkQGdFzooX_8j^B]8FYXaY0
+IbC6?XO_]96gT_>PMERNiP1
 S1
 R3
-w1790047011
-8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
-FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/synchronizer.sv
-!i122 23
+R12
+8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/Synchronizer.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/Synchronizer.sv
+!i122 107
 L0 7 11
-R15
-R16
+R13
+R14
 r1
 !s85 0
 31
-R17
-R18
-R19
+R27
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/Synchronizer.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/src/Synchronizer.sv|
 !i113 0
-R20
-R21
+R16
+R17
+vsynchronizer_tb
+2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/synchronizer_tb.sv
+R10
+!s110 1790145107
+!i10b 1
+!s100 zbIehZ]Pfn`BKkl5c62c]0
+II:nbPlZojCGDKCAa]il5C1
+S1
+R3
+w1790145091
+8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/synchronizer_tb.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/synchronizer_tb.sv
+!i122 124
+L0 8 41
+R13
+R14
+r1
+!s85 0
+31
+!s108 1790145107.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/synchronizer_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/synchronizer_tb.sv|
+!i113 0
+R16
+R17
 vtestbenchtop
 2C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
-R12
-!s110 1790064883
+R10
+!s110 1790129924
 !i10b 1
-!s100 hJ<6QKlMQ1;7>;iNkEEc70
-I:V4n?^:_lf=ZN4_]NWXLh0
+!s100 6lVY[m@giiWCVDiPdJl?M2
+IXDaE8oY2dM8o?H:<IT1f?3
 S1
 R3
-w1790064877
+R12
 8C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
-!i122 44
-L0 8 204
-R15
-R16
+!i122 85
+L0 8 202
+R13
+R14
 r1
 !s85 0
 31
-!s108 1790064883.000000
+!s108 1790129924.000000
 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv|
 !i113 0
-R20
-R21
+R16
+R17

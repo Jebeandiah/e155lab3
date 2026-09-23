@@ -20,6 +20,7 @@ parameter DEBOUNCING_WIDTH = 24
 	logic[3:0] digit_1;
 	logic[3:0] digit_2;
 	logic shift_enable;
+	logic all_unpressed;
 	logic[3:0] processed_digit;
 	logic[3:0] s;
 
@@ -29,12 +30,12 @@ parameter DEBOUNCING_WIDTH = 24
 	scanner keypad_scanner(int_osc, nreset,1'b1,scan_col_out); 
 	synchronizer row_syncer(int_osc, scan_row_in, synced_row_in);
 	//synchronizer col_syncer(int_osc, scan_col_out, synced_col_out);
-
+	poller keypad_poller(int_osc, nreset, scan_col_out, ~synced_row_in, all_unpressed, processed_digit);
 
 	digitbuffer digits(int_osc,nreset, shift_enable, processed_digit, digit_1, digit_2);
 	//assign scan_led = synced_row_in;
 
-	debouncingpoller #(DEBOUNCING_MAX, DEBOUNCING_WIDTH) d_poller(int_osc, nreset, scan_col_out, ~synced_row_in, shift_enable, processed_digit);
+	debouncer #(DEBOUNCING_MAX, DEBOUNCING_WIDTH) keypad_debouncer(int_osc, nreset, all_unpressed,processed_digit,  shift_enable);
 	assign active_display = (multiplexing_count > MULTIPLEXING_MAX/2) ? 2'b10 : 2'b01;
 	assign	s = active_display[0] ? digit_1 : digit_2;	
 	scrambledsevenseg sevseg(s, seg);

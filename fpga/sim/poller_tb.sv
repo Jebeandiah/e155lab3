@@ -8,16 +8,15 @@
 module poller_tb();
 	logic clk;
 	logic nreset;
-	logic enable;
 	logic[3:0] col;
 
 	logic[3:0] row;
-	logic is_new_digit;
+	logic all_unpressed;
 	logic[3:0] digit_out;
 	logic[3:0] saved_digit_out;
   poller
  dut (
-.clk(clk), .nreset(nreset), .enable(enable), .col(col), .row(row), .is_new_digit(is_new_digit), .digit_out(digit_out)
+.clk(clk), .nreset(nreset), .col(col), .row(row), .all_unpressed(all_unpressed), .digit_out(digit_out)
     );
 
    always begin
@@ -26,23 +25,22 @@ module poller_tb();
   end
   initial begin
 	nreset = 1'b0;       
-	enable = 1'b0;
 	col = 4'b1000;
 	row = 4'b0000;
 	@(posedge clk);
 	#1
 	nreset = 1'b1;       
-	enable = 1'b1;
 	@(posedge clk);
 	#1
 	col = 4'b0100;
 	row = 4'b1000;
 	@(posedge clk);
 	#1
-	assert(is_new_digit)
-		$display("PASSED! new digit received at time: %0t.", $time);
+	saved_digit_out =digit_out;
+	assert(!all_unpressed)
+		$display("PASSED! press received at time: %0t.", $time);
 	else 
-		$error("FAILED! new digit noy received at time: %0t.", $time); 
+		$error("FAILED! press not received at time: %0t.", $time); 
 	nreset = 1'b0;
 	@(posedge clk);
 	#1
@@ -50,22 +48,22 @@ module poller_tb();
 		$display("PASSED! reset at time: %0t.", $time);
 	else 
 		$error("FAILED! not reset at time: %0t.", $time); 
-	nreset = 1'b1;       
-	enable = 1'b0;
-	@(posedge clk);
-	#1
+	nreset = 1'b1;  
 	col = 4'b0100;
-	row = 4'b1000;
+	row = 4'b0000;	
 	@(posedge clk);
 	#1
-	assert(digit_out==4'hf)
-		$display("PASSED! disabled at time: %0t.", $time);
+	
+	col = 4'b0010;
+	row = 4'b0010;
+	@(posedge clk);
+	#1
+	assert(digit_out!=saved_digit_out)
+		$display("PASSED! single digit registered at time: %0t.", $time);
 	else 
-		$error("FAILED! not disabled at time: %0t.", $time); 
+		$error("FAILED! digit not registered at time: %0t.", $time); 
 	@(posedge clk);
 	#1
-	nreset = 1'b1;       
-	enable = 1'b1;
 	@(posedge clk);
 	#1
 	col = 4'b0100;
@@ -81,7 +79,7 @@ module poller_tb();
 	row = 4'b1000;
 		@(posedge clk);
 	#1
-	assert(!is_new_digit)
+	assert(saved_digit_out==digit_out)
 		$display("PASSED! no new digit when multipress at time: %0t.", $time);
 	else 
 		$error("FAILED! new digit when multipress at time: %0t.", $time); 
