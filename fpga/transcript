@@ -2118,3 +2118,104 @@ run -all
 # ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/onehotreducer__tb.sv(51)
 #    Time: 136 ns  Iteration: 0  Instance: /onehotreducer_tb
 # Break in Module onehotreducer_tb at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/onehotreducer__tb.sv line 51
+vsim -gui -voptargs=+acc -L iCE40UP work.testbenchtop
+# End time: 23:49:27 on Sep 22,2026, Elapsed time: 0:03:57
+# Errors: 0, Warnings: 3
+# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# vsim -gui -voptargs="+acc" -L iCE40UP work.testbenchtop 
+# Start time: 23:49:27 on Sep 22,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "debouncer(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.poller(fast)
+# Loading work.onehotreducer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncer(fast)
+# Loading work.counter(fast__2)
+# Loading work.digittracker(fast)
+# Loading work.scrambledsevenseg(fast)
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 23:50:03 on Sep 22,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 23:50:03 on Sep 22,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+# PASSED!Bounce did not register additional press at time: 641039000.
+# PASSED!Bounce did not register additional press at time: 939710000.
+# PASSED!Bounce did not register additional press at time: 1238381000.
+# PASSED!Bounce did not register additional press at time: 1537052000.
+# PASSED!Bounce did not register additional press at time: 1835723000.
+# PASSED!Bounce did not register additional press at time: 2134394000.
+# PASSED!Bounce did not register additional press at time: 2433065000.
+# PASSED!Bounce did not register additional press at time: 2731736000.
+# PASSED!Bounce did not register additional press at time: 3030407000.
+# PASSED!Bounce did not register additional press at time: 3329078000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(207)
+#    Time: 3329178 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 207
+add wave -position insertpoint  \
+sim:/testbenchtop/scan_row_in \
+sim:/testbenchtop/seg \
+sim:/testbenchtop/active_display \
+sim:/testbenchtop/scan_col_out \
+sim:/testbenchtop/nreset
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: blertwachara  Hostname: HFMZ0R3  ProcessID: 14928
+#           Attempting to use alternate WLF file "./wlft17egje".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft17egje
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/hf_osc/CLKHF
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/digits/digit_in \
+sim:/testbenchtop/dut/digits/digit_1
+add wave -position insertpoint  \
+sim:/testbenchtop/dut/keypad_debouncer/state
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbenchtop(fast)
+# Loading work.lab3_bl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.counter(fast)
+# Loading work.scanner(fast)
+# Loading work.counter(fast__1)
+# Loading work.synchronizer(fast)
+# Loading work.poller(fast)
+# Loading work.onehotreducer(fast)
+# Loading work.digitbuffer(fast)
+# Loading work.debouncer(fast)
+# Loading work.counter(fast__2)
+# Loading work.digittracker(fast)
+# Loading work.scrambledsevenseg(fast)
+run -all
+# PASSED!Bounce did not register additional press at time: 641039000.
+# PASSED!Bounce did not register additional press at time: 939710000.
+# PASSED!Bounce did not register additional press at time: 1238381000.
+# PASSED!Bounce did not register additional press at time: 1537052000.
+# PASSED!Bounce did not register additional press at time: 1835723000.
+# PASSED!Bounce did not register additional press at time: 2134394000.
+# PASSED!Bounce did not register additional press at time: 2433065000.
+# PASSED!Bounce did not register additional press at time: 2731736000.
+# PASSED!Bounce did not register additional press at time: 3030407000.
+# PASSED!Bounce did not register additional press at time: 3329078000.
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv(207)
+#    Time: 3329178 ns  Iteration: 0  Instance: /testbenchtop
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab3/fpga/sim/testbenchtop.sv line 207

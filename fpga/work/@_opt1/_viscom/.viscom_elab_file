@@ -1,1 +1,1 @@
-C:/lscc/radiant/2026.1/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 934320 work.onehotreducer_tb -quiet -auto_acc_if_foreign -work work -L iCE40UP +acc -allow_unnamed -o _opt1 -id 1-546ceb15b648-6ab3758b-18-ba4 +__betafsm
+C:/lscc/radiant/2026.1/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 934320 work.testbenchtop -quiet -auto_acc_if_foreign -work work -L iCE40UP +acc -allow_unnamed -o _opt1 -id 1-546ceb15b648-6ab37677-31e-3e2c +__betafsm
