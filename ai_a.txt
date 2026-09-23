@@ -1,0 +1,254 @@
+module keypad_one_shot #(
+    parameter integer CLK_FREQ_HZ   = 12_000_000, // Default 12 MHz internal oscillator
+    parameter integer DEBOUNCE_MS   = 10          // Debounce settling time
+)(
+    input  logic       clk,
+    input  logic       rst_n,
+    
+    // Inputs from Matrix Scanner / Raw Keypad Interface
+    input  logic       key_pressed, // Asserted (1) when ANY key is currently down
+    input  logic [3:0] raw_key_code,// Current key code from scanner
+    
+    // Keypad One-Shot Outputs
+    output logic [3:0] key_code,   // Stable captured 4-bit key code
+    output logic       key_valid   // Single-cycle high pulse on new key press
+);
+
+    // Calculate debounce counter threshold based on clock frequency
+    localparam integer DEBOUNCE_CYCLES = (CLK_FREQ_HZ / 1000) * DEBOUNCE_MS;
+    localparam integer TIMER_WIDTH     = $clog2(DEBOUNCE_CYCLES);
+
+    // FSM State Encoding
+    typedef enum logic [1:0] {
+        ST_IDLE      = 2'b00, // Waiting for a key press
+        ST_DEBOUNCE  = 2'b01, // Settling press/release bounce
+        ST_REGISTER  = 2'b10, // Pulse key_valid and capture key_code
+        ST_WAIT_RELEASE = 2'b11  // Hold until all keys are completely released
+    } state_t;
+
+    state_t state, next_state;
+
+    // Registers
+    logic [TIMER_WIDTH-1:0] timer_cnt;
+    logic                   timer_expired;
+    logic                   timer_rst;
+
+    // -------------------------------------------------------------------------
+    // 1. Debounce Counter
+    // -------------------------------------------------------------------------
+    assign timer_expired = (timer_cnt >= (DEBOUNCE_CYCLES - 1));
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            timer_cnt <= '0;
+        end else if (timer_rst) begin
+            timer_cnt <= '0;
+        end else if (!timer_expired) begin
+            timer_cnt <= timer_cnt + 1'b1;
+        end
+    end
+
+    // -------------------------------------------------------------------------
+    // 2. FSM State & Output Registers (Sequential)
+    // -------------------------------------------------------------------------
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            state     <= ST_IDLE;
+            key_code  <= 4'h0;
+            key_valid <= 1'b0;
+        end else begin
+            state <= next_state;
+
+            // Glitch-Free Registered Output Logic
+            if (next_state == ST_REGISTER) begin
+                key_valid <= 1'b1;
+                key_code  <= raw_key_code; // Lock in the stable key code
+            end else begin
+                key_valid <= 1 me_b0; // Default to zero for all other states
+            end
+        end
+    end
+
+    // Fix small syntax typo in key_valid assignment
+    // (Explicitly breaking down the state output register to avoid syntax edge-cases)
+
+    // -------------------------------------------------------------------------
+    // 3. FSM Next-State & Control Logic (Combinational)
+    // -------------------------------------------------------------------------
+    always_comb begin
+        next_state = state;
+        timer_rst  = 1'b0;
+
+        case (state)
+            ST_IDLE: begin
+                if (key_pressed) begin
+                    timer_rst  = 1'b1;
+                    next_state = ST_DEBOUNCE;
+                end
+            end
+
+            ST_DEBOUNCE: begin
+                // If signal drops mid-debounce, return to idle (glitch / noise)
+                if (!key_pressed) begin
+                    next_state = ST_IDLE;
+                end else if (timer_expired) begin
+                    next_state = ST_REGISTER;
+                end
+            end
+
+            ST_REGISTER: begin
+                // Transition immediately after one clock cycle
+                next_state = ST_WAIT_RELEASE;
+            end
+
+            ST_WAIT_RELEASE: begin
+                // Lock out new keys until current key is completely released and stable
+                if (!key_pressed) begin
+                    timer_rst  = 1'b1;
+                    // Require a debounced release before returning to IDLE
+                    if (timer_expired) begin
+                        next_state = ST_IDLE;
+                    end
+                end else begin
+                    timer_rst = 1'b1; // Keep resetting timer while key is still held
+                end
+            end
+
+            default: next_state = ST_IDLE;
+        endcase
+    end
+
+endmodule
+
+
+// SystemVerilog Keypad One-Shot Register & Debouncer
+// Target: Lattice iCE40 UP5K (or general FPGA synthesizable)
+
+module keypad_oneshot #(
+    parameter integer CLK_FREQ_HZ   = 12_000_000, // Default 12 MHz iCE40 internal oscillator
+    parameter integer DEBOUNCE_MS   = 10          // Debounce settling time in ms
+)(
+    input  logic       clk,
+    input  logic       rst_n,          // Active-low asynchronous reset
+    input  logic       key_valid,      // Driven high by scanner when a key is detected
+    input  logic [3:0] raw_key_code,   // Current key code output from scanner
+
+    output logic [3:0] key_code,       // Stable registered key code
+    output logic       new_key_pulse   // High for exactly 1 clock cycle on valid key press
+);
+
+    // Calculate counter terminal count based on clock frequency
+    localparam integer DEBOUNCE_CYCLES = (CLK_FREQ_HZ / 1000) * DEBOUNCE_MS;
+    localparam integer COUNTER_WIDTH  = $clog2(DEBOUNCE_CYCLES);
+
+    // State Encoding
+    typedef enum logic [1:0] {
+        ST_IDLE      = 2'b00, // Waiting for a key press
+        ST_DEBOUNCE  = 2'b01, // Key detected; waiting for contacts to settle
+        ST_PRESS_OUT = 2'b10, // Pulse registered; waiting for full release
+        ST_RELEASE   = 2'b11  // Key released; waiting for release bounce to settle
+    } state_e;
+
+    state_e current_state, next_state;
+
+    // Internal Registers
+    logic [COUNTER_WIDTH-1:0] timer;
+    logic                     timer_expired;
+    logic [3:0]               latched_key;
+
+    assign timer_expired = (timer >= (DEBOUNCE_CYCLES - 1));
+
+    // -------------------------------------------------------------------------
+    // 1. Debounce Timer Register
+    // -------------------------------------------------------------------------
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            timer <= '0;
+        end else begin
+            if (current_state == ST_DEBOUNCE || current_state == ST_RELEASE) begin
+                if (!timer_expired) begin
+                    timer <= timer + 1'b1;
+                end
+            end else begin
+                timer <= '0;
+            end
+        end
+    end
+
+    // -------------------------------------------------------------------------
+    // 2. State Transition Register
+    // -------------------------------------------------------------------------
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            current_state <= ST_IDLE;
+        end else begin
+            current_state <= next_state;
+        end
+    end
+
+    // -------------------------------------------------------------------------
+    // 3. Next State Logic (Combinational)
+    // -------------------------------------------------------------------------
+    always_comb begin
+        next_state = current_state;
+
+        case (current_state)
+            ST_IDLE: begin
+                if (key_valid) begin
+                    next_state = ST_DEBOUNCE;
+                end
+            end
+
+            ST_DEBOUNCE: begin
+                if (!key_valid) begin
+                    // False trigger or bounce back low
+                    next_state = ST_IDLE;
+                end else if (timer_expired) begin
+                    // Press verified
+                    next_state = ST_PRESS_OUT;
+                end
+            end
+
+            ST_PRESS_OUT: begin
+                if (!key_valid) begin
+                    // Key released; debounce release phase
+                    next_state = ST_RELEASE;
+                end
+            end
+
+            ST_RELEASE: begin
+                if (key_valid) begin
+                    // Re-bounce or key still held
+                    next_state = ST_PRESS_OUT;
+                end else if (timer_expired) begin
+                    // Fully released & settled
+                    next_state = ST_IDLE;
+                end
+            end
+
+            default: next_state = ST_IDLE;
+        endcase
+    end
+
+    // -------------------------------------------------------------------------
+    // 4. Glitch-Free Registered Outputs & Data Latching
+    // -------------------------------------------------------------------------
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            latched_key   <= 4'h0;
+            new_key_pulse <= 1'b0;
+        end else begin
+            // Default single-cycle pulse low
+            new_key_pulse <= 1'b0;
+
+            // Latch key and fire one-shot pulse on successful press debounce transition
+            if (current_state == ST_DEBOUNCE && next_state == ST_PRESS_OUT) begin
+                latched_key   <= raw_key_code;
+                new_key_pulse <= 1'b1;
+            end
+        end
+    end
+
+    assign key_code = latched_key;
+
+endmodule

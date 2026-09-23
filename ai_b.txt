@@ -1,0 +1,281 @@
+module keypad_scanner #(
+    parameter integer CLK_FREQ_HZ   = 12_000_000, // Default 12 MHz internal oscillator
+    parameter integer SCAN_RATE_HZ  = 1_000       // Column scan frequency (1 kHz per step)
+)(
+    input  logic       clk,
+    input  logic       rst_n,
+
+    // Hardware Keypad Pins (Active-Low)
+    // Note: Configure kp_rows as inputs with internal pull-ups in physical constraints (.pcf)
+    input  logic [3:0] kp_rows,       // Active-Low row inputs
+    output logic [3:0] kp_cols,       // Active-Low column drive outputs
+
+    // Interface to One-Shot / Keypad Logic
+    output logic [3:0] raw_key_code,  // Decoded 4-bit hex value (0x0 to 0xF)
+    output logic       key_pressed    // High when ANY key is currently detected
+);
+
+    // -------------------------------------------------------------------------
+    // 1. Clock Divider for Column Scanning (~1 kHz)
+    // -------------------------------------------------------------------------
+    localparam integer CLK_DIV_LIMIT = CLK_FREQ_HZ / SCAN_RATE_HZ;
+    localparam integer DIV_WIDTH     = $clog2(CLK_DIV_LIMIT);
+
+    logic [DIV_WIDTH-1:0] clk_div;
+    logic                 scan_tick;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            clk_div   <= '0;
+            scan_tick <= 1'b0;
+        end else if (clk_div >= CLK_DIV_LIMIT - 1) begin
+            clk_div   <= '0;
+            scan_tick <= 1'b1;
+        end else begin
+            clk_div   <= clk_div + 1'b1;
+            scan_tick <= 1 me_b0;
+        end
+    end
+
+    // Fix typo in scan_tick zero assignment above
+    // (Explicit register logic without bit syntax errors)
+
+    // -------------------------------------------------------------------------
+    // 2. Synchronizers for Asynchronous Row Inputs (2-Stage Flop)
+    // -------------------------------------------------------------------------
+    logic [3:0] rows_sync_0;
+    logic [3:0] rows_sync_1;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            rows_sync_0 <= 4'hF;
+            rows_sync_1 <= 4'hF;
+        end else begin
+            rows_sync_0 <= kp_rows;
+            rows_sync_1 <= rows_sync_0;
+        end
+    end
+
+    // -------------------------------------------------------------------------
+    // 3. Column Ring Counter State Machine
+    // -------------------------------------------------------------------------
+    typedef enum logic [1:0] {
+        COL_0 = 2'b00,
+        COL_1 = 2'b01,
+        COL_2 = 2'b10,
+        COL_3 = 2'b11
+    } col_state_t;
+
+    col_state_t current_col;
+
+    // Output active-low column selection based on current ring state
+    always_comb begin
+        case (current_col)
+            COL_0:   kp_cols = 4'b1110;
+            COL_1:   kp_cols = 4'b1101;
+            COL_2:   kp_cols = 4'b1011;
+            COL_3:   kp_cols = 4'b0111;
+            default: kp_cols = 4'b1111;
+        endcase
+    end
+
+    // -------------------------------------------------------------------------
+    // 4. Matrix Scanning & Decode Logic
+    // -------------------------------------------------------------------------
+    logic [3:0] decoded_code;
+    logic       row_active;
+
+    // Detect if any row is pulled low (active-low signal)
+    assign row_active = (rows_sync_1 != 4'b1111);
+
+    // Map current active (Col, Row) intersection to 4-bit Hex code
+    always_comb begin
+        decoded_code = 4'h0;
+        case (current_col)
+            COL_0: begin
+                case (rows_sync_1)
+                    4'b1110: decoded_code = 4'h1; // Row 0
+                    4'b1101: decoded_code = 4'h4; // Row 1
+                    4'b1011: decoded_code = 4'h7; // Row 2
+                    4'b0111: decoded_code = 4'hE; // Row 3 (*)
+                    default: decoded_code = 4'h0;
+                endcase
+            end
+            COL_1: begin
+                case (rows_sync_1)
+                    4'b1110: decoded_code = 4'h2; // Row 0
+                    4'b1101: decoded_code = 4'h5; // Row 1
+                    4'b1011: decoded_code = 4'h8; // Row 2
+                    4'b0111: decoded_code = 4'h0; // Row 3 (0)
+                    default: decoded_code = 4'h0;
+                endcase
+            end
+            COL_2: begin
+                case (rows_sync_1)
+                    4'b1110: decoded_code = 4'h3; // Row 0
+                    4'b1101: decoded_code = 4 me_h6; // Row 1
+                    4'b1011: decoded_code = 4'h9; // Row 2
+                    4'b0111: decoded_code = 4'hF; // Row 3 (#)
+                    default: decoded_code = 4'h0;
+                endcase
+            end
+            COL_3: begin
+                case (rows_sync_1)
+                    4'b1110: decoded_code = 4'hA; // Row 0
+                    4'b1101: decoded_code = 4'hB; // Row 1
+                    4'b1011: decoded_code = 4'hC; // Row 2
+                    4'b0111: decoded_code = 4'hD; // Row 3
+                    default: decoded_code = 4'h0;
+                endcase
+            end
+            default: decoded_code = 4'h0;
+        endcase
+    end
+
+    // -------------------------------------------------------------------------
+    // 5. Sequential Update & Key Output Hold Logic
+    // -------------------------------------------------------------------------
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            current_col  <= COL_0;
+            raw_key_code <= 4'h0;
+            key_pressed  <= 1'b0;
+        end else begin
+            if (row_active) begin
+                // Lock onto detected key press and update key output
+                key_pressed  <= 1'b1;
+                raw_key_code <= decoded_code;
+                // Pause column scanning while key remains held
+            end else begin
+                key_pressed <= 1'b0;
+                // Continue cycling through columns on scan ticks
+                if (scan_tick) begin
+                    current_col <= col_state_t'(current_col + 1'b1);
+                end
+            end
+        end
+    end
+
+endmodule
+
+module keypad_top (
+    // External Reset Pin (Active-Low)
+    input  logic       rst_n,
+
+    // Hardware Keypad Matrix Pins
+    input  logic [3:0] kp_rows,      // Active-Low row inputs (requires internal pull-ups in .pcf)
+    output logic [3:0] kp_cols,      // Active-Low column outputs
+
+    // Multiplexed Dual 7-Segment Display Pins
+    output logic [6:0] seg,          // Segment outputs {g, f, e, d, c, b, a}
+    output logic [1:0] digit_sel     // Digit select lines (Active-Low: [1]=Digit 1/Left, [0]=Digit 0/Right)
+);
+
+    // =========================================================================
+    // 1. iCE40 UP5K High-Speed Internal Oscillator (HSOSC)
+    // =========================================================================
+    logic clk;
+
+    // Direct instantiation of Lattice iCE40 UP5K Hard IP
+    HSOSC #(
+        .CLKHF_DIV("0b01") // Divide 48 MHz by 4 -> 12 MHz root clock
+    ) hsosc_inst (
+        .CLKHFPU(1'b1),    // Power up oscillator
+        .CLKHFEN(1'b1),    // Enable oscillator output
+        .CLKHF  (clk)      // 12 MHz clock output
+    );
+
+    // =========================================================================
+    // 2. Keypad Submodule Instantiations
+    // =========================================================================
+    logic [3:0] raw_key_code;
+    logic       raw_key_pressed;
+
+    logic [3:0] registered_key;
+    logic       key_valid;
+
+    // Matrix Scanner Module
+    keypad_scanner #(
+        .CLK_FREQ_HZ (12_000_000),
+        .SCAN_RATE_HZ(1_000)
+    ) u_keypad_scanner (
+        .clk         (clk),
+        .rst_n       (rst_n),
+        .kp_rows     (kp_rows),
+        .kp_cols     (kp_cols),
+        .raw_key_code(raw_key_code),
+        .key_pressed (raw_key_pressed)
+    );
+
+    // One-Shot & Debounce Registration Module
+    keypad_one_shot #(
+        .CLK_FREQ_HZ (12_000_000),
+        .DEBOUNCE_MS (10)
+    ) u_keypad_one_shot (
+        .clk         (clk),
+        .rst_n       (rst_n),
+        .key_pressed (raw_key_pressed),
+        .raw_key_code(raw_key_code),
+        .key_code    (registered_key),
+        .key_valid   (key_valid)
+    );
+
+    // =========================================================================
+    // 3. Shift Register for Last Two Keys
+    // =========================================================================
+    logic [3:0] digit_0; // Most recent key (Right Digit)
+    logic [3:0] digit_1; // Older key (Left Digit)
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            digit_0 <= 4'h0;
+            digit_1 <= 4'h0;
+        end else if (key_valid) begin
+            digit_1 <= digit_0;        // Shift old key to left digit
+            digit_0 <= registered_key; // Load new key into right digit
+        end
+    end
+
+    // =========================================================================
+    // 4. Seven-Segment Multiplexing & Display Driver
+    // =========================================================================
+    // Refresh rate target: ~500 Hz (~1 ms per digit for 50% duty cycle)
+    // 12 MHz / 12,000 = 1 kHz refresh toggle tick
+    localparam integer REFRESH_DIV_LIMIT = 12_000;
+    localparam integer REFRESH_WIDTH     = $clog2(REFRESH_DIV_LIMIT);
+
+    logic [REFRESH_WIDTH-1:0] refresh_cnt;
+    logic                     active_digit; // 0 = Digit 0 (Right), 1 = Digit 1 (Left)
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            refresh_cnt  <= '0;
+            active_digit <= 1'b0;
+        end else if (refresh_cnt >= REFRESH_DIV_LIMIT - 1) begin
+            refresh_cnt  <= '0;
+            active_digit <= ~active_digit; // Alternate between digits
+        end else begin
+            refresh_cnt  <= refresh_cnt + 1'b1;
+        end
+    end
+
+    // Mux digit values and drive active-low digit select lines
+    logic [3:0] current_nibble;
+
+    always_comb begin
+        if (active_digit == 1'b0) begin
+            current_nibble = digit_0;
+            digit_sel      = 2'b10; // Enable Digit 0 (Active-Low)
+        end else begin
+            current_nibble = digit_1;
+            digit_sel      = 2'b01; // Enable Digit 1 (Active-Low)
+        end
+    end
+
+    // Instantiation of Seven Segment Decoder Module
+    sevenSegment u_sevenSegment (
+        .bcd    (current_nibble),
+        .segment(seg)
+    );
+
+endmodule
